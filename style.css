@@ -1,0 +1,70 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0, .5);
+}
+.dictionary-container{
+    width:45%;
+    background-color: white;
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform: translate(-50%, -35%);
+    padding:15px;
+    border-radius:5px;
+}
+form input{
+    border:none;
+    outline:none;
+    border-bottom:2px solid violet;
+    width:75%;
+}
+form button{
+    width:20%;
+    border:none;
+    outline:none;
+    padding:8px 0;
+    border-radius:8px;
+    background-color: violet;
+    letter-spacing:4px;
+    font-weight: 600;
+}
+.result-2{
+    color:gray;
+    gap:10px;
+}
+#example{
+    border-left:4px solid violet;
+    padding-left:10px;
+}
+.error{
+    text-align: center;
+    margin:20px 0;
+}
+
+@media screen and (max-width:968px){
+    .dictionary-container{
+        width:60%;
+        top:22%;
+        transform: translate(-50%, -22%);
+    }
+}
+@media screen and (max-width:576px){
+    .dictionary-container{
+        width:85%;
+        top:18%;
+        transform: translate(-50%, -18%);
+    }
+    form input{
+        width:65%;
+    }
+    form button{
+        width:30%;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+}
